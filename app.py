@@ -65,7 +65,7 @@ def delete_user(user_id):
         return jsonify({"error": "User not found lol"}), 404
     
     users = [u for u in users if u["id"] != user_id]
-    return jsonify({"message": "User deleted"}), 200
+    return jsonify({"message": "User deleted lol"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
